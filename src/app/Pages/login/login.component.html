@@ -1,0 +1,40 @@
+<div class="content">
+    <!-- <div class="row"> -->
+    <div class="column">
+        <img src="../../../assets/img/logo.png" style="height: 100px;">
+        <h2 style="margin-top: 20px;">LOGIN METHOD</h2>
+        <div>
+            <div>
+                <section style="margin-bottom: 10px;">
+                    <div class="example-button-row">
+                        <button *ngIf="! this.user" mat-raised-button color="warn" style="width: 100%;"
+                            (click)="login()">Login with
+                            Google</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="example-button-row">
+                        <button *ngIf=" this.user" mat-raised-button color="warn" style="width: 100%;">Play
+                            game</button>
+                    </div>
+                </section>
+                <section style="margin-bottom: 10px;">
+                    <div class="example-button-row">
+                        <button *ngIf="! this.user" mat-raised-button color="primary" style="width: 100%;"
+                            (click)="login()">Login with
+                            Facebook</button>
+                    </div>
+                </section>
+                <section style="margin-bottom: 10px;">
+                    <div class="example-button-row">
+                        <button *ngIf="! this.user" mat-raised-button color="warn"
+                            style="width: 100%;color: white; background-color: black;" (click)="login()">Login
+                            with
+                            GitHub</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->

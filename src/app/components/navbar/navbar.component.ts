@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import * as firebase from 'firebase';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
 })
-export class AppComponent {
-  title = 'bootcamp-main';
-
+export class NavbarComponent implements OnInit {
 
   constructor(private auth: AngularFireAuth) { }
 
@@ -31,5 +29,15 @@ export class AppComponent {
     } catch (err) {
       alert("Login Failed!");
     }
+  }
+
+  public async logout() {
+    try {
+      await this.auth.signOut();
+      alert("Sign out");
+    } catch (err) {
+      alert("Cannot sign out")
+    }
+
   }
 }

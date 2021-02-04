@@ -1,0 +1,108 @@
+.content {
+    background-image: url('../../../assets/img/background-game.jpg');
+    background-repeat: no-repeat, repeat;
+    opacity: 70%;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.content form {
+    background-color: white;
+}
+
+
+.row
+{
+    content: "";
+    display: flex;
+    flex-direction: row;
+}
+
+
+.content h1
+{
+    font-size: 40pt;
+    margin-bottom: 40px;
+}
+
+.column
+{
+    content: "";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40rem;
+    height: 25rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    border-width: 1px;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.7);
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+//   .example-button-row .mat-button-base {
+//     margin: 8px 8px 8px 0;
+//   }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  button:hover {
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  }
